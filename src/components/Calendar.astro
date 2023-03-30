@@ -1,0 +1,45 @@
+<style>
+
+#container {
+  display: grid;
+  grid-template-columns: auto repeat(7, 1fr);
+  grid-template-rows: auto;
+  text-align: center;
+  gap: 0;
+  border: 1px solid rgb(40, 175, 65);
+}
+
+.empty {
+  padding: 0.5rem;
+  min-height: 1.5rem;
+}
+
+.row {
+  background-color: #7fffd44d;
+}
+
+.sidebar {
+  border: 1px solid red;
+}
+
+li.task {
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  margin: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid rgb(0, 76, 255);
+  border-width: 2px;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border-width: 2px;
+}
+
+</style>
+
+    <div id="container">
+      <div class="cell-zero"></div>
+    </div>

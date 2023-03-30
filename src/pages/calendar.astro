@@ -1,0 +1,29 @@
+---
+import "../styles/global.css";
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import Calendar from "../components/Calendar.astro";
+import Sidebar from "../components/Sidebar.astro";
+
+const pageTitle = "Calendar";
+---
+
+<style>
+  body {
+    max-width: revert;
+  }
+</style>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+  integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY="
+  crossorigin="anonymous"
+/>
+
+<BaseLayout pageTitle={pageTitle}>
+  <Sidebar />
+  <Calendar />
+  <script>
+    import "../scripts/calendar.js";
+  </script>
+</BaseLayout>
